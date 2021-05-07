@@ -1,19 +1,10 @@
-# countdown-vue
+# Vuejs 3 Countdown to my birthday
 
-## Project setup
+This a small countdown timer exercise to learn Vue 3 while also making it somewhat decent looking.
+
+## Project setup and run in dev
+
 ```
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

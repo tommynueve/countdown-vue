@@ -37,19 +37,47 @@ export default defineComponent({
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   opacity: 0.8;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .block-container .number {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f90;
+  background: linear-gradient(hsl(36deg 100% 38%) 50%, 50%, #f90 100%);
   padding: 1rem;
   border-radius: 8px;
   width: 125px;
-  height: 100px;
+  height: 110px;
   font-weight: 700;
-  font-size: 2rem;
-  box-shadow: 0px 10px 0px 0px hsl(210, 29%, 14%);
+  font-size: 3rem;
+  box-shadow: 0px 8px 0px 0px hsl(210, 29%, 14%);
+  position: relative;
+  overflow: hidden;
+}
+
+.number::before {
+  content: '';
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: hsl(210, 29%, 14%);
+  top: 50%;
+  transform: translateY(-5px);
+  left: -5px;
+}
+
+.number::after {
+  content: '';
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: hsl(210, 29%, 14%);
+  top: 50%;
+  transform: translateY(-5px);
+  right: -5px;
 }
 </style>
